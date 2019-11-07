@@ -27,14 +27,14 @@ object Store {
         data class LoadDataError(val message: String) : Msg()
     }
 
-    private val loadData = effect<Msg>{ dispatch ->
-        delay(500)
-        try {
-            dispatch(Msg.LoadDataSuccess("Hello World!"))
-        } catch (e: Exception) {
-            dispatch(Msg.LoadDataError(e.message ?: "UNKNOWN EXCEPTION"))
-        }
-    }
+//    private val loadData = effect<Msg>{ dispatch ->
+//        delay(500)
+//        try {
+//            dispatch(Msg.LoadDataSuccess("Hello World!"))
+//        } catch (e: Exception) {
+//            dispatch(Msg.LoadDataError(e.message ?: "UNKNOWN EXCEPTION"))
+//        }
+//    }
 
     class Props(
         val getData: () -> Msg,
@@ -48,7 +48,7 @@ object Store {
     val update: Update<Model, Msg> = { msg, model ->
         when (msg) {
             is Msg.LoadDataRequest -> {
-                model.copy(data = Result.Loading) to loadData
+                model.copy(data = Result.Loading) to none()
             }
             is Msg.LoadDataError -> {
                 model.copy(data = Result.Error(msg.message)) to none()
