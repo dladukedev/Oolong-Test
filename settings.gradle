@@ -1,0 +1,2 @@
+rootProject.name='Oolong Test'
+include ':app'
