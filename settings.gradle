@@ -1,2 +1,4 @@
+include ':store'
+include ':ui'
 rootProject.name='Oolong Test'
 include ':app'

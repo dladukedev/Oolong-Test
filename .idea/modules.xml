@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Oolong_Test.iml" filepath="$PROJECT_DIR$/.idea/modules/Oolong_Test.iml" group="Oolong_Test" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="Oolong Test/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/store/store.iml" filepath="$PROJECT_DIR$/.idea/modules/store/store.iml" group="Oolong Test/store" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ui/ui.iml" filepath="$PROJECT_DIR$/.idea/modules/ui/ui.iml" group="Oolong Test/ui" />
     </modules>
   </component>
 </project>
